@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="apple-touch-icon" href="/logo.jpg">
+    <link rel="icon" href="/logo.jpg"                    type="image/x-icon">
+</head>
+
+
+<body>
+    <div class="d1">
+        <!-- 輸入框的外層 -->
+        <div id="putbox">
+            <!-- 輸入框 -->
+            <input type="text" id="put" inputmode="none" placeholder="123+123">
+            <button id="calc" onclick="clac()">計算</button>
+        </div>
+    </div>
+
+    <div id="d2" dd="open">
+
+
+    </div>
+
+    <div id="d3" data-state="open">
+
+        <!-- 包了包了數字 -->
+        <div id="boxbox">
+            <!-- 箭頭 -->
+            <div id="noDis"></div>
+            <!-- <div id="change" onclick="change()"> </div> -->
+            <!-- 數字的外層 -->
+            <div id="box" style="overflow: hidden">
+                <div class="item" data-txt="(">(</div>
+                <div class="item" data-txt=")">)</div>
+                <div class="item" data-txt="" id="ac">AC</div>
+                <div class="item" data-txt="delete" id="delete">⌫</div>
+                <div class="item" data-txt="7">7</div>
+                <div class="item" data-txt="8">8</div>
+                <div class="item" data-txt="9">9</div>
+                <div class="item" data-txt="÷">÷</div>
+                <div class="item" data-txt="4">4</div>
+                <div class="item" data-txt="5">5</div>
+                <div class="item" data-txt="6">6</div>
+                <div class="item" data-txt="×">×</div>
+                <div class="item" data-txt="1">1</div>
+                <div class="item" data-txt="2">2</div>
+                <div class="item" data-txt="3">3</div>
+                <div class="item" data-txt="−">−</div>
+                <div class="item" data-txt="0">0</div>
+                <div class="item" data-txt=".">.</div>
+                <div class="item" data-txt="=">=</div>
+                <div class="item">+</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./math.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
