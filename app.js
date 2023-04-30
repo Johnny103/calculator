@@ -36,9 +36,9 @@ function clac(e) {
     //在巴底放上他
     domd2.appendChild(domDiv2)
     //把他的高和他的長度更改屬標相對位置
-    
-    domd2.insertBefore(domDiv2, domd2.firstChild);
 
+    domd2.insertBefore(domDiv2, domd2.firstChild);
+    dominput.value = ""
 }
 /**
  * 計算四則運算可回傳答案
@@ -127,11 +127,11 @@ document.getElementById('box').addEventListener('mousedown', function (e) {
     var inputValue = dominput.value;
     dominput.value = inputValue.slice(0, cursorPosition) + dataTxt + inputValue.slice(cursorPosition);
     dominput.selectionStart = dominput.selectionEnd = cursorPosition + dataTxt.length;
-
-
-
-
-
-
 });
 
+document.addEventListener('keydown', function (event) {
+    if (event.key == 'Enter') {
+        clac();
+     
+    }
+});
