@@ -75,7 +75,7 @@
  }
 
  #ac {
-     color: rgb(9 216 255);
+     color: rgb(66, 170, 211);
  }
 
  .item {
@@ -84,7 +84,7 @@
      height: calc(100% / 5);
      border: 0.5px solid rgba(77, 73, 73, 0.575);
      /* outline: 1px solid rgb(76, 65, 65); */
-     color: rgb(58, 60, 63);
+     color: rgb(180, 181, 182);
      /* background-color: rgb(37, 37, 38); */
      float: left;
      display: flex;
